@@ -53,6 +53,7 @@ const ExpenseForm = props => {
     setEnteredTitle("");
     setEnteredAmount("");
     setEnteredDate("");
+    props.onCancel();
   };
   return (
     <form onSubmit={submitHandler}>
